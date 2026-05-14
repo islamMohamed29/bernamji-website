@@ -1,0 +1,72 @@
+.faq {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../../assets/bg-trans.jpg") center / cover no-repeat;
+    opacity: 0.04;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #a3d4f540;
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}
+/* Accordion */
+.custom-accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid #e5e7eb;
+  background: transparent;
+}
+
+.custom-accordion .accordion-button {
+  background: transparent;
+  box-shadow: none;
+  font-weight: 500;
+  padding: 18px 0;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.custom-accordion .accordion-button:hover {
+  color: #0d6efd;
+}
+
+/* Remove default arrow */
+.custom-accordion .accordion-button::after {
+  background-image: none;
+  content: "+";
+  font-size: 22px;
+  font-weight: bold;
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+
+/* Rotate icon when open */
+.custom-accordion .accordion-button:not(.collapsed)::after {
+  content: "−";
+}
+
+/* Active state */
+.custom-accordion .accordion-button:not(.collapsed) {
+  color: #0d6efd;
+  background: transparent;
+}
+
+/* Body */
+.custom-accordion .accordion-body {
+  padding: 10px 0 20px;
+  color: #6c757d;
+  font-size: 14px;
+}

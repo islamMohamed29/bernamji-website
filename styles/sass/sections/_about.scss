@@ -1,0 +1,19 @@
+section.about-section {
+  .info-section {
+    color: #1e1e1e;
+    font-size: 22.142px;
+    font-weight: 500;
+  }
+  .stat-card {
+    border-radius: 20px;
+    background: rgba(163, 212, 245, 0.1);
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
