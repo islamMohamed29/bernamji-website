@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
     <!-- Owl Carousel -->
     <link
       rel="stylesheet"
@@ -18,6 +18,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+    <meta
+      name="description"
+      content="Bernamji is a digital agency specializing in software development, mobile apps, laboratory management, and enterprise solutions."
+    />
   </head>
   <body>
     <div class="wrapper" id="scroll-demo">
@@ -28,7 +32,7 @@
             class="navbar-brand font-weight-bold"
             href="#"
             data-aos="fade-right"
-            ><img src="../assets/logo-final.png" alt=""
+            ><img src="../assets/logo-final.png" alt="Bernamji Logo"
           /></a>
 
           <div class="d-lg-none">
@@ -59,13 +63,13 @@
                 data-aos-delay="300"
               >
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link custom-dropdown-toggle"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Categories
+                  Categories <i class="fas fa-angle-down dropdown-icon"></i>
                 </a>
 
                 <div class="dropdown-menu">
@@ -152,14 +156,27 @@
                 <a class="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
-
-            <a
-              href="#"
-              class="btn btn-primary sm hover-shine"
+            <div
+              class="d-flex align-items-center"
               data-aos="zoom-in"
               data-aos-delay="600"
-              ><i class="fa-solid fa-headset"></i>Support System</a
             >
+              <a href="#" class="btn btn-primary sm hover-shine"
+                ><i class="fa-solid fa-headset"></i>Support System</a
+              >
+              <a
+                href="#"
+                role="button"
+                class="change-language"
+                onclick="
+                  openLanguageModal();
+                  return false;
+                "
+                aria-label="Change language"
+              >
+                <i class="fa-solid fa-globe"></i>
+              </a>
+            </div>
           </div>
         </div>
       </nav>
@@ -167,14 +184,14 @@
       <div id="mobileMenu" class="mobileMenu" data-requirejs="responsiveMenu">
         <div class="menuHeader">
           <div class="menu-logo">
-            <img src="../assets/logo-final.png" alt="   " title="   " />
+            <img src="../assets/logo-final.png" alt="Bernamji Logo" />
             <!-- onerror="
                 this.onerror = null;
                 this.src = `/App_Themes/clients/amana/images/globals/default_img_small.jpg`;
               " -->
           </div>
 
-          <button id="closeMenu" class="close-button">
+          <button id="closeMenu" class="close-button" aria-label="Close menu">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
@@ -237,19 +254,17 @@
           </ul>
           <div class="menu-icons">
             <a
-              href="javascript:void(0)"
-              onclick="openLanguageModal()"
-              id="languageSelect"
+              href="#"
+              onclick="
+                openLanguageModal();
+                return false;
+              "
               class="btn btn-outline hover-fill w-100"
             >
               <i class="fa-solid fa-globe"></i>
               <span>Language</span>
             </a>
-            <a
-              href="/en/mylogin"
-              id="userProfile"
-              class="btn btn-primary hover-shine w-100"
-            >
+            <a href="#" class="btn btn-primary hover-shine w-100">
               <i class="fa-solid fa-headset"></i>
               <span>Support System</span>
             </a>
@@ -260,6 +275,7 @@
                 href="https://twitter.com/AmanaAlmadinah"
                 class="social-icon"
                 title="إكس"
+                aria-label="Facebook"
               >
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
@@ -267,6 +283,7 @@
                 href="https://www.instagram.com/amana.almadinah/"
                 class="social-icon"
                 title="انستغرام"
+                aria-label="Facebook"
               >
                 <i class="fa-brands fa-instagram"></i>
               </a>
@@ -274,6 +291,7 @@
                 href="https://sa.linkedin.com/company/amanaalmadinah"
                 class="social-icon"
                 title="لينكد إن"
+                aria-label="Facebook"
               >
                 <i class="fa-brands fa-x-twitter"></i>
               </a>
@@ -281,6 +299,7 @@
                 href="https://sa.linkedin.com/company/amanaalmadinah"
                 class="social-icon"
                 title="لينكد إن"
+                aria-label="Facebook"
               >
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
@@ -319,7 +338,7 @@
               <div class="about-image w-100">
                 <img
                   class="img-bottom"
-                  src="../assets/about/img-2.jpg"
+                  src="../assets/about/img-2.avif"
                   alt="About"
                 />
               </div>
@@ -351,10 +370,18 @@
                   data-aos-delay="450"
                   data-aos-duration="700"
                 >
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
                 </div>
               </div>
             </div>
@@ -375,14 +402,14 @@
                 Who we <span>are</span>
               </h2>
 
-              <h4
+              <h3
                 class="title-desc-bold my-3"
                 data-aos="fade-up"
                 data-aos-delay="100"
                 data-aos-duration="700"
               >
                 Programming Done in a Proper Way
-              </h4>
+              </h3>
 
               <p
                 class="info-section"
@@ -403,16 +430,16 @@
                 data-aos-delay="300"
                 data-aos-duration="700"
               >
-                Learn More >
+                Contact Us
               </a>
             </div>
 
             <div class="col-md-6 mt-4 mt-md-0">
               <img
-                src="../assets/about/img-1.jpg"
+                src="../assets/about/img-1.avif"
                 alt="Team Work"
                 class="img-fluid rounded-4 shadow"
-                data-aos="zoom-in-left"
+                data-aos="fade-up"
                 data-aos-delay="200"
                 data-aos-duration="900"
               />
@@ -513,148 +540,229 @@
           </div>
         </div>
       </section>
-
       <!-- Services  -->
-      <section class="services-section py-5 overflow-hidden">
+
+      <section class="services-section py-5 overflow-hidden" data-nav="light">
         <div class="container text-center">
-          <h2 class="special-title" data-aos="fade-up" data-aos-duration="700">
+          <h2 class="special-title" data-aos="fade-up" data-aos-duration="800">
             Our <span>Services</span>
           </h2>
 
           <p
             class="title-desc"
             data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="700"
+            data-aos-delay="150"
+            data-aos-duration="800"
           >
             Let us handle how your brand appears in the digital platform. These
             are the ways we do it.
           </p>
 
           <div class="row g-4 text-start mt-4">
-            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="100">
+            <!-- CARD 1 -->
+            <div
+              class="col-12 col-md-6 col-xl-4"
+              data-aos="zoom-in-up"
+              data-aos-delay="0"
+              data-aos-duration="700"
+            >
               <div class="service-card p-3 h-100 rounded-3">
                 <img
-                  src="../assets/services/cms.png"
+                  src="./../assets/services/cms.avif"
                   class="rounded-2 me-3 img-fluid"
+                  loading="lazy"
                   alt="CMS"
+                  loading="lazy"
                 />
+
                 <div>
-                  <h6 class="fw-bold">Integrated Digital Solutions</h6>
+                  <h3 class="fw-bold fs-6">Integrated Digital Solutions</h3>
                   <p class="small text-muted mb-0">
                     Reliable and efficiency works of bespoke software and CMS...
                   </p>
                 </div>
+
                 <div class="start-service">
-                  <a href="#" class="start-btn">
+                  <a
+                    href="#"
+                    class="start-btn"
+                    aria-label="Start Integrated Digital Solutions"
+                  >
                     <i class="fa-solid fa-arrow-right-to-bracket"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="200">
+            <!-- CARD 2 -->
+            <div
+              class="col-12 col-md-6 col-xl-4"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+              data-aos-duration="700"
+            >
               <div class="service-card p-3 h-100 rounded-3">
                 <img
-                  src="..//assets/services/mobile-app.jpg"
+                  src="./../assets/services/mobile-app.avif"
                   class="rounded-2 me-3 img-fluid"
                   alt="Mobile"
+                  loading="lazy"
                 />
+
                 <div>
-                  <h6 class="fw-bold">Mobile Application</h6>
+                  <h3 class="fw-bold fs-6">Mobile Application</h3>
                   <p class="small text-muted mb-0">
                     Detailed and finely done mobile app to serve any industry...
                   </p>
                 </div>
+
                 <div class="start-service">
-                  <a href="#" class="start-btn">
+                  <a
+                    href="#"
+                    class="start-btn"
+                    aria-label="Start Mobile Application"
+                  >
                     <i class="fa-solid fa-arrow-right-to-bracket"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="300">
+            <!-- CARD 3 -->
+            <div
+              class="col-12 col-md-6 col-xl-4"
+              data-aos="zoom-in-up"
+              data-aos-delay="300"
+              data-aos-duration="700"
+            >
               <div class="service-card p-3 h-100 rounded-3">
                 <img
-                  src="../assets/services/lab-manage.jpg"
+                  src="../assets/services/lab-manage.avif"
                   class="rounded-2 me-3"
                   alt="Lab"
+                  loading="lazy"
                 />
+
                 <div>
-                  <h6 class="fw-bold">Laboratory Management</h6>
+                  <h3 class="fw-bold fs-6">Laboratory Management</h3>
                   <p class="small text-muted mb-0">
                     Efficient lab information and systems for medical and
                     science...
                   </p>
                 </div>
+
                 <div class="start-service">
-                  <a href="#" class="start-btn">
+                  <a
+                    href="#"
+                    class="start-btn"
+                    aria-label="Start Mobile Application"
+                  >
                     <i class="fa-solid fa-arrow-right-to-bracket"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="400">
+            <!-- CARD 4 -->
+            <div
+              class="col-12 col-md-6 col-xl-4"
+              data-aos="zoom-in-up"
+              data-aos-delay="0"
+              data-aos-duration="700"
+            >
               <div class="service-card p-3 h-100 rounded-3">
                 <img
-                  src="../assets/services/solutions.png"
+                  src="../assets/services/solutions.avif"
                   class="rounded-2 me-3"
                   alt="ERP"
+                  loading="lazy"
                 />
+
                 <div>
-                  <h6 class="fw-bold">Innovative Enterprise Solutions</h6>
+                  <h3 class="fw-bold fs-6">Innovative Enterprise Solutions</h3>
                   <p class="small text-muted mb-0">
                     Innovative and powerful enterprise solutions that help
                     you...
                   </p>
                 </div>
+
                 <div class="start-service">
-                  <a href="#" class="start-btn">
+                  <a
+                    href="#"
+                    class="start-btn"
+                    aria-label="Start Mobile Application"
+                  >
                     <i class="fa-solid fa-arrow-right-to-bracket"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="500">
+            <!-- CARD 5 -->
+            <div
+              class="col-12 col-md-6 col-xl-4"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+              data-aos-duration="700"
+            >
               <div class="service-card p-3 h-100 rounded-3">
                 <img
-                  src="../assets/services/share-point.png"
+                  src="../assets/services/share-point.avif"
                   class="rounded-2 me-3"
                   alt="Office"
+                  loading="lazy"
                 />
+
                 <div>
-                  <h6 class="fw-bold">SharePoint & Office 365 Solutions</h6>
+                  <h3 class="fw-bold fs-6">
+                    SharePoint & Office 365 Solutions
+                  </h3>
                   <p class="small text-muted mb-0">
                     Highly functional and customized services that enhance
                     productivity...
                   </p>
                 </div>
+
                 <div class="start-service">
-                  <a href="#" class="start-btn">
+                  <a
+                    href="#"
+                    class="start-btn"
+                    aria-label="Start Mobile Application"
+                  >
                     <i class="fa-solid fa-arrow-right-to-bracket"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4" data-aos="zoom-in-up" data-aos-delay="600">
+            <!-- CARD 6 -->
+            <div
+              class="col-12 col-md-6 col-xl-4"
+              data-aos="zoom-in-up"
+              data-aos-delay="300"
+              data-aos-duration="700"
+            >
               <div class="service-card p-3 h-100 rounded-3">
                 <img
-                  src="../assets/services/document-media.png"
+                  src="../assets/services/document-media.avif"
                   class="rounded-2 me-3"
                   alt="Media"
+                  loading="lazy"
                 />
+
                 <div>
-                  <h6 class="fw-bold">Document & Media Services</h6>
+                  <h3 class="fw-bold fs-6">Document & Media Services</h3>
                   <p class="small text-muted mb-0">
                     Professional media services for your brand digital assets...
                   </p>
                 </div>
+
                 <div class="start-service">
-                  <a href="#" class="start-btn">
+                  <a
+                    href="#"
+                    class="start-btn"
+                    aria-label="Start Mobile Application"
+                  >
                     <i class="fa-solid fa-arrow-right-to-bracket"></i>
                   </a>
                 </div>
@@ -683,10 +791,18 @@
             <div class="col-md-6">
               <div class="social-wrap">
                 <div class="social-icons">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="#" aria-label="Instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" aria-label="xTwitter"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="#" aria-label="LinkedIn"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
                 </div>
 
                 <div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Careers</title>
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
 
     <link
       rel="stylesheet"
@@ -18,6 +18,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+    <meta
+      name="description"
+      content="Bernamji is a digital agency specializing in software development, mobile apps, laboratory management, and enterprise solutions."
+    />
   </head>
   <body>
     <div class="wrapper" id="scroll-demo">
@@ -28,7 +32,7 @@
             class="navbar-brand font-weight-bold"
             href="#"
             data-aos="fade-right"
-            ><img src="../assets/logo-final.png" alt=""
+            ><img src="../assets/logo-final.png" alt="Bernamji Logo"
           /></a>
 
           <div class="d-lg-none">
@@ -59,13 +63,13 @@
                 data-aos-delay="300"
               >
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link custom-dropdown-toggle"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Categories
+                  Categories <i class="fas fa-angle-down dropdown-icon"></i>
                 </a>
 
                 <div class="dropdown-menu">
@@ -152,14 +156,27 @@
                 <a class="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
-
-            <a
-              href="#"
-              class="btn btn-primary sm hover-shine"
+            <div
+              class="d-flex align-items-center"
               data-aos="zoom-in"
               data-aos-delay="600"
-              ><i class="fa-solid fa-headset"></i>Support System</a
             >
+              <a href="#" class="btn btn-primary sm hover-shine"
+                ><i class="fa-solid fa-headset"></i>Support System</a
+              >
+              <a
+                href="#"
+                role="button"
+                class="change-language"
+                onclick="
+                  openLanguageModal();
+                  return false;
+                "
+                aria-label="Change language"
+              >
+                <i class="fa-solid fa-globe"></i>
+              </a>
+            </div>
           </div>
         </div>
       </nav>
@@ -167,14 +184,14 @@
       <div id="mobileMenu" class="mobileMenu" data-requirejs="responsiveMenu">
         <div class="menuHeader">
           <div class="menu-logo">
-            <img src="../assets/logo-final.png" alt="   " title="   " />
+            <img src="../assets/logo-final.png" alt="Bernamji Logo" />
             <!-- onerror="
                 this.onerror = null;
                 this.src = `/App_Themes/clients/amana/images/globals/default_img_small.jpg`;
               " -->
           </div>
 
-          <button id="closeMenu" class="close-button">
+          <button id="closeMenu" class="close-button" aria-label="Close menu">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
@@ -237,19 +254,17 @@
           </ul>
           <div class="menu-icons">
             <a
-              href="javascript:void(0)"
-              onclick="openLanguageModal()"
-              id="languageSelect"
+              href="#"
+              onclick="
+                openLanguageModal();
+                return false;
+              "
               class="btn btn-outline hover-fill w-100"
             >
               <i class="fa-solid fa-globe"></i>
               <span>Language</span>
             </a>
-            <a
-              href="/en/mylogin"
-              id="userProfile"
-              class="btn btn-primary hover-shine w-100"
-            >
+            <a href="#" class="btn btn-primary hover-shine w-100">
               <i class="fa-solid fa-headset"></i>
               <span>Support System</span>
             </a>
@@ -437,8 +452,8 @@
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
-                  <input type="text" class="form-control" placeholder="" />
-                  <label>Full Name <span class="required-star">*</span></label>
+                  <input id="name" type="text" class="form-control" placeholder="" />
+                  <label for="name">Full Name <span class="required-star">*</span></label>
                 </div>
 
                 <div
@@ -446,18 +461,26 @@
                   data-aos="fade-up"
                   data-aos-delay="350"
                 >
-                  <input type="email" class="form-control" placeholder="" />
-                  <label>Email <span class="required-star">*</span></label>
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-control"
+                    placeholder=""
+                  />
+                  <label for="email"
+                    >Email <span class="required-star">*</span></label
+                  >
                 </div>
 
                 <div class="form-gap" data-aos="fade-up" data-aos-delay="400">
-                  <label>Mobile <span class="required-star">*</span></label>
+                  <label for="phone">Mobile <span class="required-star">*</span></label>
                   <div class="phone-wrap">
                     <span class="phone-prefix">+971 &nbsp;|</span>
                     <input
                       type="tel"
                       class="form-control"
                       placeholder="50 000 0000"
+                      id="phone"
                     />
                   </div>
                 </div>
@@ -467,15 +490,15 @@
                   data-aos="fade-up"
                   data-aos-delay="450"
                 >
-                  <input type="text" class="form-control" placeholder="" />
-                  <label
+                  <input id="salary" type="text" class="form-control" placeholder="" />
+                  <label for="salary"
                     >Expected Salary <span class="required-star">*</span></label
                   >
                 </div>
 
                 <div class="form-gap" data-aos="fade-up" data-aos-delay="500">
-                  <label>Notice Period In Days</label>
-                  <select class="form-select">
+                  <label for="noticePeriod">Notice Period In Days</label>
+                  <select id="noticePeriod" class="form-select">
                     <option value="" disabled selected></option>
                     <option>Immediately</option>
                     <option>15 Days</option>
@@ -494,8 +517,9 @@
                     class="form-control"
                     rows="6"
                     placeholder=""
+                    id="coverLetter"
                   ></textarea>
-                  <label>Cover Letter</label>
+                  <label for="coverLetter">Cover Letter</label>
                 </div>
 
                 <div class="form-gap" data-aos="fade-up" data-aos-delay="600">
@@ -540,10 +564,18 @@
             <div class="col-md-6">
               <div class="social-wrap">
                 <div class="social-icons">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="#" aria-label="Instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" aria-label="xTwitter"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="#" aria-label="LinkedIn"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
                 </div>
 
                 <div>
