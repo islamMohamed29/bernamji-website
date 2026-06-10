@@ -1,0 +1,321 @@
+section.services-section {
+  background-color: #a3d4f540;
+  .service-card {
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    min-height: 230px;
+    position: relative;
+    // h3 {
+    //   font-size: 1rem;
+    // }
+    img {
+      min-width: 159.92px;
+      min-height: 215.415px;
+      max-height: 215.415px;
+      max-width: 159.92px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+    .start-service {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 80px;
+      height: 60px;
+      background-color: #a3d4f540;
+      border-top-left-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .start-btn {
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--primary-color);
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        text-decoration: none;
+        &:hover {
+          background-color: var(--primary-color);
+          color: white;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border-bottom-right-radius: 20px;
+        // box-shadow: 10px 10px 0 10px #f0f7ff;
+        box-shadow: 10px 10px 0 10px #e8f4fc;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        border-bottom-right-radius: 20px;
+        // box-shadow: 10px 10px 0 10px #f0f7ff;
+        box-shadow: 10px 10px 0 10px #e8f4fc;
+      }
+    }
+  }
+}
+
+/* Hero */
+.digital-solutions-section {
+  .hero-content {
+    p {
+      margin: 0 0 28px;
+      font-size: 20px;
+      color: #1e1e1e;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+    h1 {
+      margin: 0 0 20px;
+      font-size: 58px;
+      font-weight: 700;
+      color: #303334;
+      span {
+        color: #126daa;
+      }
+      @media (max-width: 767px) {
+        font-size: 38px;
+      }
+      @media (max-width: 991px) {
+        font-size: 46px;
+      }
+    }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+  }
+  .hero-visual {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    .hero-image-card {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 18px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+}
+
+/* Features */
+.features-section {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../../assets/bg-trans.avif") center / cover no-repeat;
+    opacity: 0.04;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #a3d4f540;
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .feature-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: #fff;
+    border: 1px solid #ebf1f6;
+    border-radius: 10px;
+    padding: 20px 18px;
+    height: 100%;
+    box-shadow: 0 6px 18px rgba(17, 24, 39, 0.03);
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #384252;
+    }
+    .check-icon {
+      color: var(--primary-color);
+      font-weight: 800;
+      font-size: 18px;
+    }
+  }
+}
+
+/* Workflow */
+.workflow-section {
+  background: #fff;
+
+  .work-step {
+    position: relative;
+    height: 100%;
+    @media (max-width: 767px) {
+      padding-bottom: 10px;
+    }
+    .step-number {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--primary-color);
+      color: #fff;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 2;
+    }
+    .step-line {
+      position: absolute;
+      top: 16px;
+      left: 44px;
+      right: 0;
+      height: 1px;
+      background: #e0e0e0;
+      z-index: 1;
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #303334;
+    }
+
+    p {
+      margin: 0;
+      font-size: 13px;
+      color: #6b6b6b;
+      font-weight: 500;
+    }
+  }
+}
+
+/* Technologies */
+.technologies-section {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../../assets/bg-trans.avif") center / cover no-repeat;
+    opacity: 0.04;
+    z-index: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #a3d4f540;
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+  .tech-stack-card,
+  .partners-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
+    padding: 28px;
+  }
+
+  .tech-stack-card {
+    margin-bottom: 24px;
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 16px;
+        background: #eef4f8;
+        border: 1px solid #e0e9f1;
+        border-radius: 8px;
+        color: var(--primary-color);
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+  .partners-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    .partner-item {
+      font-size: 36px;
+      font-weight: 700;
+      color: #6a6f75;
+      @media (max-width: 767px) {
+        font-size: 28px;
+      }
+    }
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+/* CTA */
+.project-cta-section {
+  .cta-box {
+    text-align: center;
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+    .cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+  }
+}

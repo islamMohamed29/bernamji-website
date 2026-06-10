@@ -1,0 +1,1946 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <meta
+      name="description"
+      content="Bernamji is a digital agency specializing in software development, mobile apps, laboratory management, and enterprise solutions."
+    />
+  </head>
+  <body>
+    <div class="wrapper" id="scroll-demo">
+      <!-- Navbar  -->
+      <nav class="navbar navbar-expand-lg home">
+        <div class="container">
+          <a
+            class="navbar-brand font-weight-bold"
+            href="#"
+            data-aos="fade-right"
+            ><img src="../assets/logo-final.png" alt="Bernamji Logo"
+          /></a>
+
+          <div class="d-lg-none">
+            <button id="menuToggle" class="navbar_toggler" type="button">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-auto">
+              <li
+                class="nav-item nav-anim"
+                data-aos="fade-down"
+                data-aos-delay="100"
+              >
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li
+                class="nav-item nav-anim"
+                data-aos="fade-down"
+                data-aos-delay="200"
+              >
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li
+                class="nav-item dropdown mega-dropdown nav-anim"
+                data-aos="fade-down"
+                data-aos-delay="300"
+              >
+                <a
+                  class="nav-link custom-dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories <i class="fas fa-angle-down dropdown-icon"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <a class="mega-item" href="#">
+                        <div class="mega-wrap">
+                          <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </div>
+                          <div class="text">
+                            <h5>Books & Webinars</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <a class="mega-item" href="#">
+                        <div class="mega-wrap">
+                          <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </div>
+                          <div class="text">
+                            <h5>Books & Webinars</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <a class="mega-item" href="#">
+                        <div class="mega-wrap">
+                          <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </div>
+                          <div class="text">
+                            <h5>Books & Webinars</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <a class="mega-item" href="#">
+                        <div class="mega-wrap">
+                          <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </div>
+                          <div class="text">
+                            <h5>Books & Webinars</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <a class="mega-item" href="#">
+                        <div class="mega-wrap">
+                          <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                          </div>
+                          <div class="text">
+                            <h5>Books & Webinars</h5>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="nav-item nav-anim"
+                data-aos="fade-down"
+                data-aos-delay="300"
+              >
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+              <li
+                class="nav-item nav-anim"
+                data-aos="fade-down"
+                data-aos-delay="400"
+              >
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <div
+              class="d-flex align-items-center"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+            >
+              <a href="#" class="btn btn-primary sm hover-shine"
+                ><i class="fa-solid fa-headset"></i>Support System</a
+              >
+              <a
+                href="#"
+                role="button"
+                class="change-language"
+                onclick="
+                  openLanguageModal();
+                  return false;
+                "
+                aria-label="Change language"
+              >
+                <i class="fa-solid fa-globe"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="menuOverlay" class="menuOverlay"></div>
+      <div id="mobileMenu" class="mobileMenu" data-requirejs="responsiveMenu">
+        <div class="menuHeader">
+          <div class="menu-logo">
+            <img src="../assets/logo-final.png" alt="Bernamji Logo" />
+            <!-- onerror="
+                this.onerror = null;
+                this.src = `/App_Themes/clients/amana/images/globals/default_img_small.jpg`;
+              " -->
+          </div>
+
+          <button id="closeMenu" class="close-button" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <nav class="menu-nav">
+          <ul>
+            <li class="">
+              <a class=" " title="Home" href=""> Home </a>
+            </li>
+            <li class="">
+              <a class=" " title="About Us" href=""> About Us </a>
+            </li>
+
+            <li class="has-dropdown">
+              <a class="menu-dropdown-toggle" title="Categories" href="#">
+                Categories
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+
+              <ul class="new-dropdown-menu">
+                <li>
+                  <a class="" href="https://qlabs.amana-md.gov.sa/ar/services"
+                    >Categories</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class=""
+                    href="https://qlabs.amana-md.gov.sa/ar/services/request-sample-analysis"
+                  >
+                    Books & Webinars
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class=""
+                    href="https://qlabs.amana-md.gov.sa/ar/services/request-to-approve-materials"
+                  >
+                    Books & Webinars</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class=""
+                    href="https://qlabs.amana-md.gov.sa/ar/services/request-laboratory-accreditation"
+                  >
+                    Books & Webinars</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class=""
+                    href="https://qlabs.amana-md.gov.sa/ar/services/request-soil-testing-report"
+                  >
+                    Books & Webinars</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="menu-icons">
+            <a
+              href="#"
+              onclick="
+                openLanguageModal();
+                return false;
+              "
+              class="btn btn-outline hover-fill w-100"
+            >
+              <i class="fa-solid fa-globe"></i>
+              <span>Language</span>
+            </a>
+            <a href="#" class="btn btn-primary hover-shine w-100">
+              <i class="fa-solid fa-headset"></i>
+              <span>Support System</span>
+            </a>
+          </div>
+          <div class="menu-social">
+            <div class="social-icons">
+              <a
+                href="https://twitter.com/AmanaAlmadinah"
+                class="social-icon"
+                title="إكس"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/amana.almadinah/"
+                class="social-icon"
+                title="انستغرام"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://sa.linkedin.com/company/amanaalmadinah"
+                class="social-icon"
+                title="لينكد إن"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a
+                href="https://sa.linkedin.com/company/amanaalmadinah"
+                class="social-icon"
+                title="لينكد إن"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="slider-area overflow-hidden">
+        <div class="bend niceties preview-2">
+          <div id="ensign-nivoslider" class="slides">
+            <!-- <img
+              src="./../assets/banners/banner-4.avif"
+              alt="Banner 1"
+              title="#slider-direction-1"
+            /> -->
+            <img
+              src="./../assets/banners/banner-1.avif"
+              alt="Banner 1"
+              title="#slider-direction-1"
+            />
+            <img
+              src="./../assets/banners/banner-2.avif"
+              alt="Banner 2"
+              title="#slider-direction-2"
+            />
+            <img
+              src="./../assets/banners/banner-3.avif"
+              alt="Banner 3"
+              title="#slider-direction-3"
+            />
+          </div>
+          <!-- direction 1 -->
+
+          <div id="slider-direction-1" class="t-cn slider-direction">
+            <div class="slider-content t-cn s-tb slider-1">
+              <div
+                class="title-container s-tb-c title-compress text-start hero-content"
+              >
+                <div class="container">
+                  <!-- <h4 class="title4">We are Expert In Construction</h4> -->
+                  <h1 class="title1">
+                    <span class="line" style="display: block">
+                      Innovating the
+                    </span>
+                    <span class="line special" style="display: block">
+                      Digital
+                    </span>
+                    <span class="line" style="display: block"> Landscape </span>
+                  </h1>
+                  <p>
+                    Leading digital agency with a solid design & <br />
+                    development expertise.
+                  </p>
+                  <a class="btn btn-primary hover-shine banner-btn"
+                    >Our Services</a
+                  >
+
+                  <a class="btn btn-outline hover-fill banner-btn">Try Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="slider-direction-2" class="t-cn slider-direction">
+            <div class="slider-content t-cn s-tb slider-1">
+              <div
+                class="title-container s-tb-c title-compress text-start hero-content"
+              >
+                <div class="container">
+                  <!-- <h4 class="title4">We are Expert In Construction</h4> -->
+                  <div class="title1">
+                    <span class="line" style="display: block">
+                      Innovating the
+                    </span>
+                    <span class="line special" style="display: block">
+                      Digital
+                    </span>
+                    <span class="line" style="display: block"> Landscape </span>
+                  </div>
+                  <p>
+                    Leading digital agency with a solid design & <br />
+                    development expertise.
+                  </p>
+                  <a class="btn btn-primary hover-shine banner-btn"
+                    >Our Services</a
+                  >
+
+                  <a class="btn btn-outline hover-fill banner-btn">Try Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="slider-direction-3" class="t-cn slider-direction">
+            <div class="slider-content t-cn s-tb slider-1">
+              <div
+                class="title-container s-tb-c title-compress text-start hero-content"
+              >
+                <div class="container">
+                  <!-- <h4 class="title4">We are Expert In Construction</h4> -->
+                  <div class="title1">
+                    <span class="line" style="display: block">
+                      Innovating the
+                    </span>
+                    <span class="line special" style="display: block">
+                      Digital
+                    </span>
+                    <span class="line" style="display: block"> Landscape </span>
+                  </div>
+                  <p>
+                    Leading digital agency with a solid design & <br />
+                    development expertise.
+                  </p>
+                  <a class="btn btn-primary hover-shine banner-btn"
+                    >Our Services</a
+                  >
+
+                  <a class="btn btn-outline hover-fill banner-btn">Try Demo</a>
+                  <!-- <div class="read-more">
+                    <button type="button" class="btn btn-lg">
+                      Read More
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Vendors  -->
+      <section class="vendors overflow-hidden">
+        <div class="container">
+          <div class="swiper vendors-swiper">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-delay="0"
+              >
+                <div class="vendor">
+                  <img
+                    class="google"
+                    src="../assets/vendors/1.png"
+                    alt="Google"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in-up"
+                data-aos-duration="800"
+                data-aos-delay="150"
+              >
+                <div class="vendor">
+                  <img
+                    class="microsoft"
+                    src="../assets/vendors/2.png"
+                    alt="Microsoft"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in-up"
+                data-aos-duration="800"
+                data-aos-delay="300"
+              >
+                <div class="vendor">
+                  <img
+                    class="github"
+                    src="../assets/vendors/3.png"
+                    alt="GitHub"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in-up"
+                data-aos-duration="800"
+                data-aos-delay="450"
+              >
+                <div class="vendor">
+                  <img
+                    class="cloudflare"
+                    src="../assets/vendors/4.png"
+                    alt="Cloudflare"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div
+                class="swiper-slide"
+                data-aos="zoom-in-up"
+                data-aos-duration="800"
+                data-aos-delay="600"
+              >
+                <div class="vendor">
+                  <img
+                    class="arcgis"
+                    src="../assets/vendors/5.png"
+                    alt="ArcGIS"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ِAbout  -->
+
+      <section class="about-section py-5 overflow-hidden" data-nav="dark">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h2
+                class="special-title"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
+                Who we <span>are</span>
+              </h2>
+
+              <h3
+                class="title-desc-bold my-3"
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-duration="800"
+              >
+                Programming Done in a Proper Way
+              </h3>
+
+              <p
+                class="info-section"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="800"
+              >
+                Bennamji is a company that holds true to its name and makes sure
+                that we support our clientele not only from the surface but also
+                on the things that matters most - getting the codes done the
+                proper way.
+              </p>
+
+              <a
+                href="#"
+                class="btn btn-outline hover-shine"
+                data-aos="zoom-in"
+                data-aos-delay="550"
+                data-aos-duration="600"
+              >
+                Learn More >
+              </a>
+            </div>
+
+            <div
+              class="col-md-6 mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <img
+                src="../assets/about/img-1.avif"
+                alt="Team Work"
+                class="img-fluid rounded-4 shadow"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="row mt-5 g-3">
+            <div
+              class="col-6 col-md-3"
+              data-aos="zoom-in-up"
+              data-aos-delay="0"
+              data-aos-duration="700"
+            >
+              <div class="stat-card">
+                <h3 class="title mb-0">32+</h3>
+                <p class="mb-0">Years Of Experience</p>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-md-3"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+              data-aos-duration="700"
+            >
+              <div class="stat-card">
+                <h3 class="title mb-0">140+</h3>
+                <p class="mb-0">Professional Staff</p>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-md-3"
+              data-aos="zoom-in-up"
+              data-aos-delay="300"
+              data-aos-duration="700"
+            >
+              <div class="stat-card">
+                <h3 class="title mb-0">1.2K+</h3>
+                <p class="mb-0">Yearly Customer</p>
+              </div>
+            </div>
+
+            <div
+              class="col-6 col-md-3"
+              data-aos="zoom-in-up"
+              data-aos-delay="450"
+              data-aos-duration="700"
+            >
+              <div class="stat-card">
+                <h3 class="title mb-0">99,5%</h3>
+                <p class="mb-0">Positive Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services  -->
+
+      <section class="services-section py-5 overflow-hidden" data-nav="light">
+        <div class="container text-center">
+          <h2 class="special-title" data-aos="fade-up" data-aos-duration="800">
+            Our <span>Services</span>
+          </h2>
+
+          <p
+            class="title-desc"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-duration="800"
+          >
+            Let us handle how your brand appears in the digital platform. These
+            are the ways we do it.
+          </p>
+
+          <div class="row g-4 text-start mt-4">
+            <!-- CARD 1 -->
+            <div
+              class="col-12 col-md-6 col-xl-4"
+              data-aos="zoom-in-up"
+              data-aos-delay="0"
+              data-aos-duration="700"
+            >
+              <div class="service-card p-3 h-100 rounded-3">
+                <img
+                  src="./../assets/services/cms.avif"
+                  class="rounded-2 me-3 img-fluid"
+                  loading="lazy"
+                  alt="CMS"
+                  loading="lazy"
+                />
+
+                <div>
+                  <h3 class="fw-bold fs-6">Integrated Digital Solutions</h3>
+                  <p class="small text-muted mb-0">
+                    Reliable and efficiency works of bespoke software and CMS...
+                  </p>
+                </div>
+
+                <div class="start-service">
+                  <a
+                    href="#"
+                    class="start-btn"
+                    aria-label="Start Integrated Digital Solutions"
+                  >
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div
+              class="col-12 col-md-6 col-xl-4"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+              data-aos-duration="700"
+            >
+              <div class="service-card p-3 h-100 rounded-3">
+                <img
+                  src="./../assets/services/mobile-app.avif"
+                  class="rounded-2 me-3 img-fluid"
+                  alt="Mobile"
+                  loading="lazy"
+                />
+
+                <div>
+                  <h3 class="fw-bold fs-6">Mobile Application</h3>
+                  <p class="small text-muted mb-0">
+                    Detailed and finely done mobile app to serve any industry...
+                  </p>
+                </div>
+
+                <div class="start-service">
+                  <a
+                    href="#"
+                    class="start-btn"
+                    aria-label="Start Mobile Application"
+                  >
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div
+              class="col-12 col-md-6 col-xl-4"
+              data-aos="zoom-in-up"
+              data-aos-delay="300"
+              data-aos-duration="700"
+            >
+              <div class="service-card p-3 h-100 rounded-3">
+                <img
+                  src="../assets/services/lab-manage.avif"
+                  class="rounded-2 me-3"
+                  alt="Lab"
+                  loading="lazy"
+                />
+
+                <div>
+                  <h3 class="fw-bold fs-6">Laboratory Management</h3>
+                  <p class="small text-muted mb-0">
+                    Efficient lab information and systems for medical and
+                    science...
+                  </p>
+                </div>
+
+                <div class="start-service">
+                  <a
+                    href="#"
+                    class="start-btn"
+                    aria-label="Start Mobile Application"
+                  >
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div
+              class="col-12 col-md-6 col-xl-4"
+              data-aos="zoom-in-up"
+              data-aos-delay="0"
+              data-aos-duration="700"
+            >
+              <div class="service-card p-3 h-100 rounded-3">
+                <img
+                  src="../assets/services/solutions.avif"
+                  class="rounded-2 me-3"
+                  alt="ERP"
+                  loading="lazy"
+                />
+
+                <div>
+                  <h3 class="fw-bold fs-6">Innovative Enterprise Solutions</h3>
+                  <p class="small text-muted mb-0">
+                    Innovative and powerful enterprise solutions that help
+                    you...
+                  </p>
+                </div>
+
+                <div class="start-service">
+                  <a
+                    href="#"
+                    class="start-btn"
+                    aria-label="Start Mobile Application"
+                  >
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div
+              class="col-12 col-md-6 col-xl-4"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+              data-aos-duration="700"
+            >
+              <div class="service-card p-3 h-100 rounded-3">
+                <img
+                  src="../assets/services/share-point.avif"
+                  class="rounded-2 me-3"
+                  alt="Office"
+                  loading="lazy"
+                />
+
+                <div>
+                  <h3 class="fw-bold fs-6">
+                    SharePoint & Office 365 Solutions
+                  </h3>
+                  <p class="small text-muted mb-0">
+                    Highly functional and customized services that enhance
+                    productivity...
+                  </p>
+                </div>
+
+                <div class="start-service">
+                  <a
+                    href="#"
+                    class="start-btn"
+                    aria-label="Start Mobile Application"
+                  >
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div
+              class="col-12 col-md-6 col-xl-4"
+              data-aos="zoom-in-up"
+              data-aos-delay="300"
+              data-aos-duration="700"
+            >
+              <div class="service-card p-3 h-100 rounded-3">
+                <img
+                  src="../assets/services/document-media.avif"
+                  class="rounded-2 me-3"
+                  alt="Media"
+                  loading="lazy"
+                />
+
+                <div>
+                  <h3 class="fw-bold fs-6">Document & Media Services</h3>
+                  <p class="small text-muted mb-0">
+                    Professional media services for your brand digital assets...
+                  </p>
+                </div>
+
+                <div class="start-service">
+                  <a
+                    href="#"
+                    class="start-btn"
+                    aria-label="Start Mobile Application"
+                  >
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Clients  -->
+      <section class="clients-section py-5 overflow-hidden" data-nav="dark">
+        <div class="container text-center">
+          <h2 class="special-title" data-aos="fade-up" data-aos-duration="800">
+            What our <span>Clients</span>
+          </h2>
+
+          <p
+            class="title-desc"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-duration="800"
+          >
+            Real feedback from our clients that reflects our quality,
+            reliability, and commitment.
+          </p>
+
+          <div
+            class="swiper clients-swiper mt-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="900"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide h-100">
+                <div class="client">
+                  <div class="client-card-body">
+                    <div
+                      class="client-info"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                      data-aos-duration="700"
+                    >
+                      <div class="client-image">
+                        <img
+                          src="../assets/client-1.avif"
+                          alt="Client 1"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="info">
+                        <h3 class="client-name">Wael Elbiltagi</h3>
+                        <p class="client-position">
+                          Manager of Laboratories and Environmental Consulting
+                          Department
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quote start">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="22"
+                      viewBox="0 0 30 22"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_219_17891)">
+                        <path
+                          d="M6.66409 8.82851C6.33818 8.82851 6.02543 8.87716 5.71414 8.92145C5.81498 8.58986 5.91874 8.25264 6.08535 7.94967C6.25196 7.50952 6.51209 7.12797 6.77077 6.74355C6.98707 6.3277 7.36851 6.04618 7.64911 5.69034C7.94287 5.34452 8.34331 5.11444 8.6604 4.8272C8.97171 4.5271 9.37944 4.37705 9.7039 4.16555C10.0429 3.97548 10.3382 3.76541 10.6539 3.66538L11.4416 3.34813L12.1343 3.06661L11.4255 0.297119L10.553 0.502902C10.2739 0.571496 9.93336 0.651523 9.54607 0.747268C9.15006 0.818721 8.72767 1.0145 8.25711 1.19313C7.79233 1.39605 7.25451 1.53325 6.7547 1.85907C6.25196 2.1706 5.67176 2.43069 5.16025 2.84797C4.66481 3.27811 4.06708 3.6511 3.62572 4.19842C3.14344 4.71002 2.66701 5.24734 2.29725 5.85897C1.86905 6.44202 1.57822 7.08224 1.27132 7.7153C0.993636 8.34836 0.770034 8.99577 0.587353 9.62448C0.240988 10.8849 0.0860733 12.0824 0.0261534 13.1071C-0.0235361 14.1331 0.00569306 14.9863 0.0670742 15.6036C0.0889962 15.8952 0.129917 16.1781 0.159146 16.3739L0.195682 16.614L0.23368 16.6054C0.493616 17.7927 1.092 18.8838 1.9596 19.7524C2.82722 20.6211 3.92859 21.2318 5.13634 21.5139C6.34408 21.7961 7.60883 21.7381 8.78432 21.3467C9.95974 20.9554 10.9979 20.2466 11.7786 19.3024C12.5593 18.3582 13.0507 17.2172 13.1959 16.0114C13.3412 14.8055 13.1343 13.5841 12.5992 12.4883C12.0642 11.3926 11.2229 10.4674 10.1726 9.81979C9.12217 9.17214 7.90582 8.82843 6.66409 8.82851ZM22.7401 8.82851C22.4142 8.82851 22.1014 8.87716 21.7901 8.92145C21.891 8.58986 21.9947 8.25264 22.1613 7.94967C22.328 7.50952 22.5881 7.12797 22.8468 6.74355C23.0631 6.3277 23.4445 6.04618 23.7251 5.69034C24.0189 5.34452 24.4193 5.11444 24.7364 4.8272C25.0477 4.5271 25.4555 4.37705 25.7799 4.16555C26.119 3.97548 26.4142 3.76541 26.7299 3.66538L27.5176 3.34813L28.2103 3.06661L27.5016 0.297119L26.629 0.502902C26.3499 0.571496 26.0094 0.651523 25.6221 0.747268C25.2261 0.818721 24.8037 1.0145 24.3331 1.19313C23.8698 1.39749 23.3305 1.53325 22.8307 1.8605C22.328 2.17203 21.7478 2.43212 21.2362 2.8494C20.7409 3.27954 20.1431 3.65252 19.7017 4.19842C19.2194 4.71002 18.743 5.24734 18.3733 5.85897C17.9451 6.44202 17.6543 7.08224 17.3473 7.7153C17.0696 8.34836 16.846 8.99577 16.6634 9.62448C16.317 10.8849 16.1621 12.0824 16.1022 13.1071C16.0525 14.1331 16.0817 14.9863 16.1431 15.6036C16.165 15.8952 16.2059 16.1781 16.2351 16.3739L16.2717 16.614L16.3097 16.6054C16.5697 17.7927 17.168 18.8838 18.0356 19.7524C18.9032 20.6211 20.0046 21.2318 21.2124 21.5139C22.4201 21.7961 23.6848 21.7381 24.8603 21.3467C26.0357 20.9554 27.0739 20.2466 27.8546 19.3024C28.6353 18.3582 29.1267 17.2172 29.2719 16.0114C29.4172 14.8055 29.2103 13.5841 28.6752 12.4883C28.1403 11.3926 27.2989 10.4674 26.2486 9.81979C25.1982 9.17214 23.9818 8.82843 22.7401 8.82851Z"
+                          fill="#126DAA"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_219_17891">
+                          <rect width="29.3161" height="21.9871" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <p
+                    class="client-msg"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="700"
+                  >
+                    I want to express my gratitude to Bernamji Company and its
+                    CEO, Engineer Ismail Abdou, for the fantastic teamwork in
+                    developing our project management software. I appreciate
+                    your commitment to timelines and the technical support you
+                    provided. Your flexibility in managing new requirements
+                    demonstrates your team's expertise. I look forward to
+                    collaborating on future projects, God willing. Wishing you
+                    continued success and growth!
+                  </p>
+                  <div class="quote end">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="22"
+                      viewBox="0 0 30 22"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_219_17891)">
+                        <path
+                          d="M6.66409 8.82851C6.33818 8.82851 6.02543 8.87716 5.71414 8.92145C5.81498 8.58986 5.91874 8.25264 6.08535 7.94967C6.25196 7.50952 6.51209 7.12797 6.77077 6.74355C6.98707 6.3277 7.36851 6.04618 7.64911 5.69034C7.94287 5.34452 8.34331 5.11444 8.6604 4.8272C8.97171 4.5271 9.37944 4.37705 9.7039 4.16555C10.0429 3.97548 10.3382 3.76541 10.6539 3.66538L11.4416 3.34813L12.1343 3.06661L11.4255 0.297119L10.553 0.502902C10.2739 0.571496 9.93336 0.651523 9.54607 0.747268C9.15006 0.818721 8.72767 1.0145 8.25711 1.19313C7.79233 1.39605 7.25451 1.53325 6.7547 1.85907C6.25196 2.1706 5.67176 2.43069 5.16025 2.84797C4.66481 3.27811 4.06708 3.6511 3.62572 4.19842C3.14344 4.71002 2.66701 5.24734 2.29725 5.85897C1.86905 6.44202 1.57822 7.08224 1.27132 7.7153C0.993636 8.34836 0.770034 8.99577 0.587353 9.62448C0.240988 10.8849 0.0860733 12.0824 0.0261534 13.1071C-0.0235361 14.1331 0.00569306 14.9863 0.0670742 15.6036C0.0889962 15.8952 0.129917 16.1781 0.159146 16.3739L0.195682 16.614L0.23368 16.6054C0.493616 17.7927 1.092 18.8838 1.9596 19.7524C2.82722 20.6211 3.92859 21.2318 5.13634 21.5139C6.34408 21.7961 7.60883 21.7381 8.78432 21.3467C9.95974 20.9554 10.9979 20.2466 11.7786 19.3024C12.5593 18.3582 13.0507 17.2172 13.1959 16.0114C13.3412 14.8055 13.1343 13.5841 12.5992 12.4883C12.0642 11.3926 11.2229 10.4674 10.1726 9.81979C9.12217 9.17214 7.90582 8.82843 6.66409 8.82851ZM22.7401 8.82851C22.4142 8.82851 22.1014 8.87716 21.7901 8.92145C21.891 8.58986 21.9947 8.25264 22.1613 7.94967C22.328 7.50952 22.5881 7.12797 22.8468 6.74355C23.0631 6.3277 23.4445 6.04618 23.7251 5.69034C24.0189 5.34452 24.4193 5.11444 24.7364 4.8272C25.0477 4.5271 25.4555 4.37705 25.7799 4.16555C26.119 3.97548 26.4142 3.76541 26.7299 3.66538L27.5176 3.34813L28.2103 3.06661L27.5016 0.297119L26.629 0.502902C26.3499 0.571496 26.0094 0.651523 25.6221 0.747268C25.2261 0.818721 24.8037 1.0145 24.3331 1.19313C23.8698 1.39749 23.3305 1.53325 22.8307 1.8605C22.328 2.17203 21.7478 2.43212 21.2362 2.8494C20.7409 3.27954 20.1431 3.65252 19.7017 4.19842C19.2194 4.71002 18.743 5.24734 18.3733 5.85897C17.9451 6.44202 17.6543 7.08224 17.3473 7.7153C17.0696 8.34836 16.846 8.99577 16.6634 9.62448C16.317 10.8849 16.1621 12.0824 16.1022 13.1071C16.0525 14.1331 16.0817 14.9863 16.1431 15.6036C16.165 15.8952 16.2059 16.1781 16.2351 16.3739L16.2717 16.614L16.3097 16.6054C16.5697 17.7927 17.168 18.8838 18.0356 19.7524C18.9032 20.6211 20.0046 21.2318 21.2124 21.5139C22.4201 21.7961 23.6848 21.7381 24.8603 21.3467C26.0357 20.9554 27.0739 20.2466 27.8546 19.3024C28.6353 18.3582 29.1267 17.2172 29.2719 16.0114C29.4172 14.8055 29.2103 13.5841 28.6752 12.4883C28.1403 11.3926 27.2989 10.4674 26.2486 9.81979C25.1982 9.17214 23.9818 8.82843 22.7401 8.82851Z"
+                          fill="#126DAA"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_219_17891">
+                          <rect width="29.3161" height="21.9871" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div class="swiper-slide h-100">
+                <div class="client">
+                  <div class="client-card-body">
+                    <div
+                      class="client-info"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                      data-aos-duration="700"
+                    >
+                      <div class="client-image">
+                        <img
+                          src="../assets/client-2.avif"
+                          alt="Client 2"
+                          loading="lazy"
+                        />
+                      </div>
+                      <div class="info">
+                        <h3 class="client-name">Eng Saleh bin Salem Al-Fifi</h3>
+                        <p class="client-position">
+                          General Director of the General Administration of
+                          Plant Wealth, MEWA, KSA
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quote start">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="22"
+                      viewBox="0 0 30 22"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_219_17891)">
+                        <path
+                          d="M6.66409 8.82851C6.33818 8.82851 6.02543 8.87716 5.71414 8.92145C5.81498 8.58986 5.91874 8.25264 6.08535 7.94967C6.25196 7.50952 6.51209 7.12797 6.77077 6.74355C6.98707 6.3277 7.36851 6.04618 7.64911 5.69034C7.94287 5.34452 8.34331 5.11444 8.6604 4.8272C8.97171 4.5271 9.37944 4.37705 9.7039 4.16555C10.0429 3.97548 10.3382 3.76541 10.6539 3.66538L11.4416 3.34813L12.1343 3.06661L11.4255 0.297119L10.553 0.502902C10.2739 0.571496 9.93336 0.651523 9.54607 0.747268C9.15006 0.818721 8.72767 1.0145 8.25711 1.19313C7.79233 1.39605 7.25451 1.53325 6.7547 1.85907C6.25196 2.1706 5.67176 2.43069 5.16025 2.84797C4.66481 3.27811 4.06708 3.6511 3.62572 4.19842C3.14344 4.71002 2.66701 5.24734 2.29725 5.85897C1.86905 6.44202 1.57822 7.08224 1.27132 7.7153C0.993636 8.34836 0.770034 8.99577 0.587353 9.62448C0.240988 10.8849 0.0860733 12.0824 0.0261534 13.1071C-0.0235361 14.1331 0.00569306 14.9863 0.0670742 15.6036C0.0889962 15.8952 0.129917 16.1781 0.159146 16.3739L0.195682 16.614L0.23368 16.6054C0.493616 17.7927 1.092 18.8838 1.9596 19.7524C2.82722 20.6211 3.92859 21.2318 5.13634 21.5139C6.34408 21.7961 7.60883 21.7381 8.78432 21.3467C9.95974 20.9554 10.9979 20.2466 11.7786 19.3024C12.5593 18.3582 13.0507 17.2172 13.1959 16.0114C13.3412 14.8055 13.1343 13.5841 12.5992 12.4883C12.0642 11.3926 11.2229 10.4674 10.1726 9.81979C9.12217 9.17214 7.90582 8.82843 6.66409 8.82851ZM22.7401 8.82851C22.4142 8.82851 22.1014 8.87716 21.7901 8.92145C21.891 8.58986 21.9947 8.25264 22.1613 7.94967C22.328 7.50952 22.5881 7.12797 22.8468 6.74355C23.0631 6.3277 23.4445 6.04618 23.7251 5.69034C24.0189 5.34452 24.4193 5.11444 24.7364 4.8272C25.0477 4.5271 25.4555 4.37705 25.7799 4.16555C26.119 3.97548 26.4142 3.76541 26.7299 3.66538L27.5176 3.34813L28.2103 3.06661L27.5016 0.297119L26.629 0.502902C26.3499 0.571496 26.0094 0.651523 25.6221 0.747268C25.2261 0.818721 24.8037 1.0145 24.3331 1.19313C23.8698 1.39749 23.3305 1.53325 22.8307 1.8605C22.328 2.17203 21.7478 2.43212 21.2362 2.8494C20.7409 3.27954 20.1431 3.65252 19.7017 4.19842C19.2194 4.71002 18.743 5.24734 18.3733 5.85897C17.9451 6.44202 17.6543 7.08224 17.3473 7.7153C17.0696 8.34836 16.846 8.99577 16.6634 9.62448C16.317 10.8849 16.1621 12.0824 16.1022 13.1071C16.0525 14.1331 16.0817 14.9863 16.1431 15.6036C16.165 15.8952 16.2059 16.1781 16.2351 16.3739L16.2717 16.614L16.3097 16.6054C16.5697 17.7927 17.168 18.8838 18.0356 19.7524C18.9032 20.6211 20.0046 21.2318 21.2124 21.5139C22.4201 21.7961 23.6848 21.7381 24.8603 21.3467C26.0357 20.9554 27.0739 20.2466 27.8546 19.3024C28.6353 18.3582 29.1267 17.2172 29.2719 16.0114C29.4172 14.8055 29.2103 13.5841 28.6752 12.4883C28.1403 11.3926 27.2989 10.4674 26.2486 9.81979C25.1982 9.17214 23.9818 8.82843 22.7401 8.82851Z"
+                          fill="#126DAA"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_219_17891">
+                          <rect width="29.3161" height="21.9871" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <p
+                    class="client-msg"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="700"
+                  >
+                    Our experience with Bernamji, through the General
+                    Administration of Plant Wealth, in automating administrative
+                    processes for laboratory sample analysis in the Ministry's
+                    pesticide residue labs across the Kingdom, has been
+                    fantastic. We’ve gained a lot of tech that helped us get the
+                    work done efficiently, making monitoring, follow-up, and
+                    getting results much faster. A big thank you to Bernamji for
+                    the great collaboration so far. We're looking forward to
+                    continuing this partnership and wish them even more success
+                    and achievements ahead.
+                  </p>
+                  <div class="quote end">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="22"
+                      viewBox="0 0 30 22"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_219_17891)">
+                        <path
+                          d="M6.66409 8.82851C6.33818 8.82851 6.02543 8.87716 5.71414 8.92145C5.81498 8.58986 5.91874 8.25264 6.08535 7.94967C6.25196 7.50952 6.51209 7.12797 6.77077 6.74355C6.98707 6.3277 7.36851 6.04618 7.64911 5.69034C7.94287 5.34452 8.34331 5.11444 8.6604 4.8272C8.97171 4.5271 9.37944 4.37705 9.7039 4.16555C10.0429 3.97548 10.3382 3.76541 10.6539 3.66538L11.4416 3.34813L12.1343 3.06661L11.4255 0.297119L10.553 0.502902C10.2739 0.571496 9.93336 0.651523 9.54607 0.747268C9.15006 0.818721 8.72767 1.0145 8.25711 1.19313C7.79233 1.39605 7.25451 1.53325 6.7547 1.85907C6.25196 2.1706 5.67176 2.43069 5.16025 2.84797C4.66481 3.27811 4.06708 3.6511 3.62572 4.19842C3.14344 4.71002 2.66701 5.24734 2.29725 5.85897C1.86905 6.44202 1.57822 7.08224 1.27132 7.7153C0.993636 8.34836 0.770034 8.99577 0.587353 9.62448C0.240988 10.8849 0.0860733 12.0824 0.0261534 13.1071C-0.0235361 14.1331 0.00569306 14.9863 0.0670742 15.6036C0.0889962 15.8952 0.129917 16.1781 0.159146 16.3739L0.195682 16.614L0.23368 16.6054C0.493616 17.7927 1.092 18.8838 1.9596 19.7524C2.82722 20.6211 3.92859 21.2318 5.13634 21.5139C6.34408 21.7961 7.60883 21.7381 8.78432 21.3467C9.95974 20.9554 10.9979 20.2466 11.7786 19.3024C12.5593 18.3582 13.0507 17.2172 13.1959 16.0114C13.3412 14.8055 13.1343 13.5841 12.5992 12.4883C12.0642 11.3926 11.2229 10.4674 10.1726 9.81979C9.12217 9.17214 7.90582 8.82843 6.66409 8.82851ZM22.7401 8.82851C22.4142 8.82851 22.1014 8.87716 21.7901 8.92145C21.891 8.58986 21.9947 8.25264 22.1613 7.94967C22.328 7.50952 22.5881 7.12797 22.8468 6.74355C23.0631 6.3277 23.4445 6.04618 23.7251 5.69034C24.0189 5.34452 24.4193 5.11444 24.7364 4.8272C25.0477 4.5271 25.4555 4.37705 25.7799 4.16555C26.119 3.97548 26.4142 3.76541 26.7299 3.66538L27.5176 3.34813L28.2103 3.06661L27.5016 0.297119L26.629 0.502902C26.3499 0.571496 26.0094 0.651523 25.6221 0.747268C25.2261 0.818721 24.8037 1.0145 24.3331 1.19313C23.8698 1.39749 23.3305 1.53325 22.8307 1.8605C22.328 2.17203 21.7478 2.43212 21.2362 2.8494C20.7409 3.27954 20.1431 3.65252 19.7017 4.19842C19.2194 4.71002 18.743 5.24734 18.3733 5.85897C17.9451 6.44202 17.6543 7.08224 17.3473 7.7153C17.0696 8.34836 16.846 8.99577 16.6634 9.62448C16.317 10.8849 16.1621 12.0824 16.1022 13.1071C16.0525 14.1331 16.0817 14.9863 16.1431 15.6036C16.165 15.8952 16.2059 16.1781 16.2351 16.3739L16.2717 16.614L16.3097 16.6054C16.5697 17.7927 17.168 18.8838 18.0356 19.7524C18.9032 20.6211 20.0046 21.2318 21.2124 21.5139C22.4201 21.7961 23.6848 21.7381 24.8603 21.3467C26.0357 20.9554 27.0739 20.2466 27.8546 19.3024C28.6353 18.3582 29.1267 17.2172 29.2719 16.0114C29.4172 14.8055 29.2103 13.5841 28.6752 12.4883C28.1403 11.3926 27.2989 10.4674 26.2486 9.81979C25.1982 9.17214 23.9818 8.82843 22.7401 8.82851Z"
+                          fill="#126DAA"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_219_17891">
+                          <rect width="29.3161" height="21.9871" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-controls">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Partners -->
+      <section class="partners-section py-5 overflow-hidden" data-nav="dark">
+        <div class="container text-center">
+          <h2 class="special-title" data-aos="fade-up" data-aos-duration="800">
+            Our <span>Partners</span>
+          </h2>
+
+          <p
+            class="title-desc"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-duration="800"
+          >
+            We have worked with these clients and our solutions worked with
+            them. You might know them as well.
+          </p>
+
+          <div
+            class="partners-box mt-4"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-duration="800"
+          >
+            <div class="row">
+              <!-- 1 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="0"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/sharjah.png"
+                    alt="sharjah"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/sharjah-private.png"
+                    alt="sharjah-private"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/ministry-of-env-water-agriculture.png"
+                    alt="ministry-of-env-water-agriculture"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 4 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/riyadh-region-municipilty.png"
+                    alt="riyadh-region-municipilty"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 5 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/madinah-regional-municipality.png"
+                    alt="madinah-regional-municipality"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 6 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/washnah.png"
+                    alt="washnah"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 7 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="0"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/organic.png"
+                    alt="organic"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 8 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/national-water-company.png"
+                    alt="national-water-company"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 9 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/Alkhorayef.png"
+                    alt="Alkhorayef"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 10 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/Almandaryah.png"
+                    alt="Almandaryah"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 11 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/AdecoGroup.png"
+                    alt="AdecoGroup"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 12 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/AgriServ.png"
+                    alt="AgriServ"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 13 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="0"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/mst.png"
+                    alt="mst"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 14 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/dar-altanshit-alzirai.png"
+                    alt="dar-altanshit-alzirai"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 15 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/dotli.png"
+                    alt="dotli"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 16 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/daring-top-tours.png"
+                    alt="daring-top-tours"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 17 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/safari-star.png"
+                    alt="safari-star"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <!-- 18 -->
+              <div
+                class="col-6 col-md-2"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="600"
+              >
+                <div class="partner-card">
+                  <img
+                    src="../assets/parteners/bin-dawood.png"
+                    alt="bin-dawood"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- How It Work  -->
+      <section class="how-iw py-5 overflow-hidden" data-nav="light">
+        <div class="container text-center">
+          <h2 class="special-title" data-aos="fade-up" data-aos-duration="800">
+            How it <span>Works</span>
+          </h2>
+
+          <p
+            class="title-desc"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-duration="800"
+          >
+            We simplify the process of turning your ideas into powerful digital
+            products through clear steps and smart execution.
+          </p>
+
+          <div class="row align-items-center mt-4">
+            <div
+              class="col-md-4 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="0"
+              data-aos-duration="600"
+            >
+              <div class="step-card">
+                <div class="wrap-head">
+                  <small class="title">Pick a Plan</small>
+                  <h3 class="sub-title">Subscribe to a Plan</h3>
+                </div>
+                <p class="description">
+                  Choose a monthly plan that fits your stage, whether you're
+                  just testing or scaling.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-4 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="600"
+            >
+              <div class="step-card active">
+                <div class="wrap-head">
+                  <small class="title">Start Develop</small>
+                  <h3 class="sub-title">Build Your Product</h3>
+                </div>
+                <p class="description">
+                  Access powerful tools like templates, dashboards, and
+                  real-time editions.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-4 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="600"
+            >
+              <div class="step-card">
+                <div class="wrap-head">
+                  <small class="title">See Real Impact</small>
+                  <h3 class="sub-title">Get Result</h3>
+                </div>
+                <p class="description">
+                  Deploy instantly, track user behavior, and iterate using
+                  built-in analytics.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="steps" data-aos="fade-up">
+            <div class="line"></div>
+            <div class="line active"></div>
+
+            <div class="step">01</div>
+            <div class="step active">02</div>
+            <div class="step">03</div>
+          </div>
+        </div>
+      </section>
+      <!-- Seamless Integration  -->
+      <section
+        class="seamless-integration py-5 overflow-hidden"
+        data-nav="dark"
+      >
+        <div class="container text-center">
+          <h2 class="special-title" data-aos="fade-up" data-aos-duration="800">
+            Seamless <span>Integration</span>
+          </h2>
+
+          <p
+            class="title-desc"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-duration="800"
+          >
+            We integrate your system effortlessly with leading platforms and
+            services to ensure smooth data flow and better performance.
+          </p>
+
+          <div class="row align-items-center mt-4">
+            <div class="col-12">
+              <div
+                class="orbit-wrapper"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+              >
+                <div class="center-logo">
+                  <img
+                    src="../assets/integration/bernamji-center.png"
+                    alt="bernamji-center"
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="orbit">
+                  <div class="item item1" data-aos="fade-up" data-aos-delay="0">
+                    <img
+                      src="../assets/integration/Nafath.png"
+                      alt="Nafath"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div
+                    class="item item2"
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                  >
+                    <img
+                      src="../assets/integration/momtasel.png"
+                      alt="momtasel"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div
+                    class="item item3"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <img
+                      src="../assets/integration/UAE.svg"
+                      alt="UAE"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div
+                    class="item item4"
+                    data-aos="fade-up"
+                    data-aos-delay="150"
+                  >
+                    <img
+                      src="../assets/integration/arc-gis.png"
+                      alt="arcGis"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div
+                    class="item item5"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <img
+                      src="../assets/integration/google-ana.png"
+                      alt="google-ana"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div
+                    class="item item6"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                  >
+                    <img
+                      src="../assets/integration/google-maps.png"
+                      alt="google-maps"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div
+                    class="item item7"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <img
+                      src="../assets/integration/baladi.png"
+                      alt="baladi"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div
+                    class="item item8"
+                    data-aos="fade-up"
+                    data-aos-delay="350"
+                  >
+                    <img
+                      src="../assets/integration/sadad.png"
+                      alt="sadad"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <!-- <div class="dot" data-aos="zoom-in" data-aos-delay="800"></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ  -->
+      <section class="faq py-5 overflow-hidden" data-nav="light">
+        <div class="container text-center">
+          <h2 class="special-title" data-aos="fade-up" data-aos-duration="800">
+            FA<span>Qs</span>
+          </h2>
+
+          <p
+            class="title-desc"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-duration="800"
+          >
+            Find quick answers to the most common questions about our services,
+            process, technologies, and how we help businesses grow. This section
+            is designed to give you clarity and save your time.
+          </p>
+
+          <div class="row g-4 py-2">
+            <!-- LEFT -->
+            <div
+              class="col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              data-aos-duration="800"
+            >
+              <div class="accordion custom-accordion">
+                <div
+                  class="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q1"
+                    >
+                      What kind of products does Bitelo build?
+                    </button>
+                  </h2>
+                  <div
+                    id="q1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqLeft"
+                  >
+                    <div class="accordion-body">
+                      We build scalable web and mobile apps tailored to your
+                      business needs.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q2"
+                    >
+                      How long does it take to build an MVP?
+                    </button>
+                  </h2>
+                  <div
+                    id="q2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqLeft"
+                  >
+                    <div class="accordion-body">
+                      On average, 4–6 weeks. We use an agile sprint process that
+                      helps you launch fast, test early, and evolve quickly
+                      based on feedback.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q3"
+                    >
+                      Can Bitelo help me beyond launch?
+                    </button>
+                  </h2>
+                  <div
+                    id="q3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqLeft"
+                  >
+                    <div class="accordion-body">
+                      Yes, we provide continuous support and improvements.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div
+              class="col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              data-aos-duration="800"
+            >
+              <div class="accordion custom-accordion" id="faqRight">
+                <div
+                  class="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q4"
+                    >
+                      What technologies do you use?
+                    </button>
+                  </h2>
+                  <div
+                    id="q4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqRight"
+                  >
+                    <div class="accordion-body">
+                      We use modern stacks like React, .NET, Node.js and more.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q5"
+                    >
+                      How is Bitelo different from other dev agencies?
+                    </button>
+                  </h2>
+                  <div
+                    id="q5"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqRight"
+                  >
+                    <div class="accordion-body">
+                      We focus on speed, quality, and real business impact.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Technology Exploration -->
+      <section
+        class="technology-exploration py-5 overflow-hidden"
+        data-nav="dark"
+      >
+        <div class="container text-center">
+          <h2 class="special-title" data-aos="fade-up" data-aos-duration="800">
+            Technology <span>Exploration</span>
+          </h2>
+
+          <p
+            class="title-desc"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-duration="800"
+          >
+            Stay up to date with the latest technology trends, insights, and
+            innovations. Here we share research, updates, and perspectives that
+            help businesses make smarter digital decisions.
+          </p>
+
+          <div
+            class="swiper techSwiper mt-4"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="800"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+                <div class="tech-card">
+                  <div class="image"></div>
+                  <div class="content">
+                    <span>Jan 12, 2026</span>
+                    <h3>
+                      <a href="#"
+                        >Open-Source LLMs: The Future Of AI Technology</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" data-aos="fade-up" data-aos-delay="400">
+                <div class="tech-card">
+                  <div class="image">
+                    <img
+                      src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                      alt="Open Source AI Technology"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="content">
+                    <span>Jan 12, 2026</span>
+                    <h3>
+                      <a href="#"
+                        >Open-Source LLMs: The Future Of AI Technology</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" data-aos="fade-up" data-aos-delay="500">
+                <div class="tech-card">
+                  <div class="image">
+                    <img
+                      src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                      alt="unsplash"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="content">
+                    <span>Jan 12, 2026</span>
+                    <h3>
+                      <a href="#"
+                        >Open-Source LLMs: The Future Of AI Technology</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-controls">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer  -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="privacy-wrap">
+                <div class="privacy-term">
+                  <a href="#">Privacy Policy</a>
+                  <span class="mx-2">|</span>
+                  <a href="#">Terms & Conditions</a>
+                </div>
+                <small>© 2026 Bernamji. All Rights Reserved</small>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="social-wrap">
+                <div class="social-icons">
+                  <a href="#" aria-label="Facebook"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="#" aria-label="Instagram"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" aria-label="xTwitter"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="#" aria-label="LinkedIn"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+
+                <div>
+                  <small>Last updated on 10 March 2023</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div id="progress-pie" onclick="scrollToTop()" title="العودة للأعلى">
+      <svg id="pie-svg" viewBox="0 0 50 50">
+        <circle id="pie-bg" cx="25" cy="25" r="20" />
+        <circle id="pie-fill" cx="25" cy="25" r="20" />
+      </svg>
+      <div id="pie-inner">0%</div>
+      <div id="pie-arrow">↑</div>
+    </div>
+    <span class="loader"></span>
+    <!-- Language OverLay  -->
+    <div id="languageOverlay">
+      <div class="language_box">
+        <button class="closeBtnLanguage" onclick="closeLanguageModal()">
+          ✖
+        </button>
+        <h2>Change Language</h2>
+        <div id="languageSelect">
+          <a id="arabicBtn" onclick="changeLanguage('ar')" class="active">
+            العربية
+          </a>
+          <a id="englishBtn" onclick="changeLanguage('en')"> English </a>
+        </div>
+        <p class="desc">
+          You can choose your preferred language to easily browse the site. The
+          page will reload to apply the changes.
+        </p>
+      </div>
+    </div>
+  </body>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <!-- Owl -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    defer
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    defer
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    defer
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+    defer
+  ></script>
+  <script src="../scripts/js/plugins/jquery.nivo.slider.js" defer></script>
+  <script src="../scripts/js/plugins/aos.min.js" defer></script>
+
+  <script src="../scripts/main.js" defer></script>
+</html>

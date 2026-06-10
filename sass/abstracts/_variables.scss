@@ -1,0 +1,17 @@
+$primary-color: #126daa;
+$green-color: #017366;
+$second-white: #f8fafc;
+$secondary-color: #3b82c4;
+// $sidebar-width: 80px;
+// $header-height: 80px;
+
+// $font-path-roboto: "../../../assets/fonts/content/roboto";
+// $font-path-inter: "../../../assets/fonts/content/inter";
+// $font-path-notoKufi: "../../../assets/fonts/content/notoKufi";
+
+:root {
+  --primary-color: #{$primary-color};
+  --green-color: #{$green-color};
+  --second-white: #{$second-white};
+  --secondary-color: #{$secondary-color};
+}

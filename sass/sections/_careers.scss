@@ -1,0 +1,158 @@
+.join-our-team {
+  .join-box {
+    padding: 80px;
+    border: 1px solid #a3d4f5;
+    @media (max-width: 991px) {
+      padding: 0;
+      border-color: transparent;
+    }
+    .job-card {
+      background: linear-gradient(
+        0deg,
+        rgba(5, 30, 46, 0.05) 0%,
+        rgba(5, 30, 46, 0.05) 100%
+      );
+
+      border: 1px solid transparent;
+      border-radius: 10px;
+      padding: 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition:
+        box-shadow 0.2s,
+        border-color 0.2s;
+      &:hover {
+        box-shadow: 0 4px 18px rgba(21, 101, 192, 0.1);
+        border-color: #b0c8ef;
+      }
+      .job-tag {
+        display: inline-block;
+        background: #e6e6e6;
+        color: #555;
+        font-size: 11px;
+        font-weight: 600;
+        padding: 3px 10px;
+        border-radius: 20px;
+        width: fit-content;
+      }
+
+      h6 {
+        font-size: 15px;
+        font-weight: 700;
+        color: #2d3436;
+        margin: 4px 0 2px;
+      }
+
+      p {
+        font-size: 13px;
+        color: #4a5565;
+        flex: 1;
+      }
+    }
+  }
+  .form-section {
+    background:
+      linear-gradient(
+        0deg,
+        rgba(5, 30, 46, 0.05) 0%,
+        rgba(5, 30, 46, 0.05) 100%
+      ),
+      #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+    h5 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary-color);
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .form-control,
+    .form-select {
+      border: 1px solid transparent;
+      border-radius: 7px;
+      font-size: 13px;
+      padding: -1 14px;
+      background: #fafafa;
+      color: #333;
+      transition: border-color 0.2s;
+
+      &:focus {
+        border-color: #b0c8ef;
+        box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+        outline: none;
+        background: #fff;
+      }
+    }
+    textarea {
+      height: 138px;
+      resize: none;
+    }
+    .form-control::placeholder {
+      color: #bbb;
+    }
+    label {
+      font-size: 12px;
+      color: #555;
+      // margin-bottom: 4px;
+    }
+    .required-star {
+      color: #e83e38;
+    }
+    .phone-wrap {
+      display: flex;
+      gap: 0;
+      .form-control {
+        border-radius: 0 7px 7px 0;
+      }
+      .phone-prefix {
+        background: #e4e4e4;
+        border-radius: 7px 0 0 7px;
+        padding: 10px 12px;
+        font-size: 13px;
+        color: #555;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+/* ── JOIN FORM ── */
+
+.upload-area {
+  border: 1.5px dashed #bbb;
+  border-radius: 7px;
+  background: #fafafa;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12.5px;
+  color: #aaa;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.upload-area:hover {
+  border-color: var(--primary-light);
+}
+.upload-area i {
+  color: #aaa;
+}
+
+.form-gap {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 991px) {
+  .form-section {
+    margin-top: 30px;
+    border-top: 1px solid var(--border);
+    padding-top: 28px;
+  }
+}
